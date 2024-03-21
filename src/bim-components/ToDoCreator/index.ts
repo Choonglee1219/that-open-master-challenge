@@ -17,7 +17,7 @@ interface ToDo {
 // Create and export a class named just like the folder, all tools must extend from component class
 export class ToDoCreator extends OBC.Component<ToDo[]> implements OBC.UI, OBC.Disposable {
     static uuid = "be178b9a-0ee1-4d3d-b83a-49d4c5f3e34b" //Mandatory and must be called "uuid"
-    onProjectCreated = new OBC.Event<ToDo>()
+    onTodoCreated = new OBC.Event<ToDo>()
     enabled = true
     uiElement = new OBC.UIElement<{ //Specify all UI elements to use
         activationButton: OBC.Button

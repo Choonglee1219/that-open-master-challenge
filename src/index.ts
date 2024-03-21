@@ -354,7 +354,7 @@ function importJSONProperties(model: FragmentsGroup) {  // Added for challenge c
 //Instance of ToDoCreator and setup method
 const toDoCreator = new ToDoCreator(viewer)
 await toDoCreator.setup()
-toDoCreator.onProjectCreated.add((toDo) => {
+toDoCreator.onTodoCreated.add((toDo) => {
   console.log(toDo)
 })
 

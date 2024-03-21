@@ -103,7 +103,7 @@ export class ToDoCreator extends OBC.Component<ToDo[]> implements OBC.UI, OBC.Di
             this.deleteToDo(toDo, toDoCard)
         })
 
-        this.onProjectCreated.trigger(toDo)
+        this.onTodoCreated.trigger(toDo)
     }
 
     //Challenge: method to delete a To Do
